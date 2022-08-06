@@ -1,0 +1,29 @@
+<%=name%>
+<br>
+<%=myarr%><br>
+<%=myarr[1]%><br>
+<%= myobj.student_name %><br>
+<%= myobj['student_mobile'] %><br><br>
+
+<!-- <%=myarrobj%> -->
+
+<table border="1">
+    <tr>
+        <th>SN</th>
+        <th>STUDENT NAME</th>       
+        <th>STUDENT MOBILE</th>
+    </tr>
+<%
+    for(i=0;i<myarrobj.length;i++)
+    {
+%>
+<tr>
+    <td><%= i+1 %></td>
+    <td><%= myarrobj[i].student_name %> </td>
+    <td><%= myarrobj[i].student_mobile %></td>
+</tr>
+<% 
+    }
+%>
+</table>
+
